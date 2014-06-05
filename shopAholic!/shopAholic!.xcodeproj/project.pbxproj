@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FE716E11940043B000C992F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716E01940043B000C992F /* Foundation.framework */; };
+		7FE716E31940043B000C992F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716E21940043B000C992F /* CoreGraphics.framework */; };
+		7FE716E51940043B000C992F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716E41940043B000C992F /* UIKit.framework */; };
+		7FE716EB1940043B000C992F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE716E91940043B000C992F /* InfoPlist.strings */; };
+		7FE716ED1940043B000C992F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE716EC1940043B000C992F /* main.m */; };
+		7FE716F11940043B000C992F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE716F01940043B000C992F /* AppDelegate.m */; };
+		7FE716F41940043B000C992F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE716F21940043B000C992F /* Main.storyboard */; };
+		7FE716F71940043B000C992F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE716F61940043B000C992F /* ViewController.m */; };
+		7FE716F91940043B000C992F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE716F81940043B000C992F /* Images.xcassets */; };
+		7FE717001940043B000C992F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716FF1940043B000C992F /* XCTest.framework */; };
+		7FE717011940043B000C992F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716E01940043B000C992F /* Foundation.framework */; };
+		7FE717021940043B000C992F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716E41940043B000C992F /* UIKit.framework */; };
+		7FE7170A1940043B000C992F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE717081940043B000C992F /* InfoPlist.strings */; };
+		7FE7170C1940043B000C992F /* shopAholic_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7170B1940043B000C992F /* shopAholic_Tests.m */; };
+		7FE71717194005BE000C992F /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE71716194005BE000C992F /* CartViewController.m */; };
+		7FE7171A194005D8000C992F /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE71719194005D8000C992F /* ItemsViewController.m */; };
+		7FE7171D194005EA000C992F /* StoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7171C194005EA000C992F /* StoreViewController.m */; };
+		7FE7172019400611000C992F /* HomeViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7171F19400611000C992F /* HomeViewViewController.m */; };
+		7FE7172319400625000C992F /* itemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7172219400625000C992F /* itemDetailViewController.m */; };
+		7FE717261940064B000C992F /* shoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE717251940064B000C992F /* shoppingCart.m */; };
+		7FE7172B194006C0000C992F /* item.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7172A194006C0000C992F /* item.m */; };
+		7FE7172E194006CC000C992F /* items.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7172D194006CC000C992F /* items.m */; };
+		7FE7173019400E8E000C992F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE7172F19400E8E000C992F /* MapKit.framework */; };
+		7FE71732194016D3000C992F /* ShopAholic.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE71731194016D3000C992F /* ShopAholic.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FE717031940043B000C992F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FE716D51940043A000C992F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FE716DC1940043B000C992F;
+			remoteInfo = "shopAholic!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FE716DD1940043B000C992F /* shopAholic!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shopAholic!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE716E01940043B000C992F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7FE716E21940043B000C992F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7FE716E41940043B000C992F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7FE716E81940043B000C992F /* shopAholic!-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shopAholic!-Info.plist"; sourceTree = "<group>"; };
+		7FE716EA1940043B000C992F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FE716EC1940043B000C992F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7FE716EE1940043B000C992F /* shopAholic!-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shopAholic!-Prefix.pch"; sourceTree = "<group>"; };
+		7FE716EF1940043B000C992F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7FE716F01940043B000C992F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7FE716F31940043B000C992F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FE716F51940043B000C992F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7FE716F61940043B000C992F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7FE716F81940043B000C992F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7FE716FE1940043B000C992F /* shopAholic!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "shopAholic!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE716FF1940043B000C992F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7FE717071940043B000C992F /* shopAholic!Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "shopAholic!Tests-Info.plist"; sourceTree = "<group>"; };
+		7FE717091940043B000C992F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7FE7170B1940043B000C992F /* shopAholic_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shopAholic_Tests.m; sourceTree = "<group>"; };
+		7FE71715194005BE000C992F /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		7FE71716194005BE000C992F /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		7FE71718194005D8000C992F /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		7FE71719194005D8000C992F /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		7FE7171B194005EA000C992F /* StoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreViewController.h; sourceTree = "<group>"; };
+		7FE7171C194005EA000C992F /* StoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = StoreViewController.m; sourceTree = "<group>"; };
+		7FE7171E19400611000C992F /* HomeViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewViewController.h; sourceTree = "<group>"; };
+		7FE7171F19400611000C992F /* HomeViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewViewController.m; sourceTree = "<group>"; };
+		7FE7172119400625000C992F /* itemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itemDetailViewController.h; sourceTree = "<group>"; };
+		7FE7172219400625000C992F /* itemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = itemDetailViewController.m; sourceTree = "<group>"; };
+		7FE717241940064B000C992F /* shoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoppingCart.h; sourceTree = "<group>"; };
+		7FE717251940064B000C992F /* shoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoppingCart.m; sourceTree = "<group>"; };
+		7FE71729194006C0000C992F /* item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = item.h; sourceTree = "<group>"; };
+		7FE7172A194006C0000C992F /* item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = item.m; sourceTree = "<group>"; };
+		7FE7172C194006CC000C992F /* items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = items.h; sourceTree = "<group>"; };
+		7FE7172D194006CC000C992F /* items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = items.m; sourceTree = "<group>"; };
+		7FE7172F19400E8E000C992F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7FE71731194016D3000C992F /* ShopAholic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ShopAholic.json; path = ../../ShopAholic.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FE716DA1940043B000C992F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE7173019400E8E000C992F /* MapKit.framework in Frameworks */,
+				7FE716E31940043B000C992F /* CoreGraphics.framework in Frameworks */,
+				7FE716E51940043B000C992F /* UIKit.framework in Frameworks */,
+				7FE716E11940043B000C992F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE716FB1940043B000C992F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE717001940043B000C992F /* XCTest.framework in Frameworks */,
+				7FE717021940043B000C992F /* UIKit.framework in Frameworks */,
+				7FE717011940043B000C992F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FE716D41940043A000C992F = {
+			isa = PBXGroup;
+			children = (
+				7FE716E61940043B000C992F /* shopAholic! */,
+				7FE717051940043B000C992F /* shopAholic!Tests */,
+				7FE716DF1940043B000C992F /* Frameworks */,
+				7FE716DE1940043B000C992F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FE716DE1940043B000C992F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FE716DD1940043B000C992F /* shopAholic!.app */,
+				7FE716FE1940043B000C992F /* shopAholic!Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FE716DF1940043B000C992F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FE7172F19400E8E000C992F /* MapKit.framework */,
+				7FE716E01940043B000C992F /* Foundation.framework */,
+				7FE716E21940043B000C992F /* CoreGraphics.framework */,
+				7FE716E41940043B000C992F /* UIKit.framework */,
+				7FE716FF1940043B000C992F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FE716E61940043B000C992F /* shopAholic! */ = {
+			isa = PBXGroup;
+			children = (
+				7FE716EF1940043B000C992F /* AppDelegate.h */,
+				7FE716F01940043B000C992F /* AppDelegate.m */,
+				7FE716F21940043B000C992F /* Main.storyboard */,
+				7FE716F51940043B000C992F /* ViewController.h */,
+				7FE716F61940043B000C992F /* ViewController.m */,
+				7FE71731194016D3000C992F /* ShopAholic.json */,
+				7FE7172719400657000C992F /* customViewController */,
+				7FE717281940067F000C992F /* classes */,
+				7FE716F81940043B000C992F /* Images.xcassets */,
+				7FE716E71940043B000C992F /* Supporting Files */,
+			);
+			path = "shopAholic!";
+			sourceTree = "<group>";
+		};
+		7FE716E71940043B000C992F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE716E81940043B000C992F /* shopAholic!-Info.plist */,
+				7FE716E91940043B000C992F /* InfoPlist.strings */,
+				7FE716EC1940043B000C992F /* main.m */,
+				7FE716EE1940043B000C992F /* shopAholic!-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE717051940043B000C992F /* shopAholic!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7FE7170B1940043B000C992F /* shopAholic_Tests.m */,
+				7FE717061940043B000C992F /* Supporting Files */,
+			);
+			path = "shopAholic!Tests";
+			sourceTree = "<group>";
+		};
+		7FE717061940043B000C992F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FE717071940043B000C992F /* shopAholic!Tests-Info.plist */,
+				7FE717081940043B000C992F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FE7172719400657000C992F /* customViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FE71715194005BE000C992F /* CartViewController.h */,
+				7FE71716194005BE000C992F /* CartViewController.m */,
+				7FE71718194005D8000C992F /* ItemsViewController.h */,
+				7FE71719194005D8000C992F /* ItemsViewController.m */,
+				7FE7172119400625000C992F /* itemDetailViewController.h */,
+				7FE7172219400625000C992F /* itemDetailViewController.m */,
+				7FE7171B194005EA000C992F /* StoreViewController.h */,
+				7FE7171C194005EA000C992F /* StoreViewController.m */,
+				7FE7171E19400611000C992F /* HomeViewViewController.h */,
+				7FE7171F19400611000C992F /* HomeViewViewController.m */,
+			);
+			name = customViewController;
+			sourceTree = "<group>";
+		};
+		7FE717281940067F000C992F /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				7FE717241940064B000C992F /* shoppingCart.h */,
+				7FE71729194006C0000C992F /* item.h */,
+				7FE7172A194006C0000C992F /* item.m */,
+				7FE7172C194006CC000C992F /* items.h */,
+				7FE7172D194006CC000C992F /* items.m */,
+				7FE717251940064B000C992F /* shoppingCart.m */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FE716DC1940043B000C992F /* shopAholic! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE7170F1940043B000C992F /* Build configuration list for PBXNativeTarget "shopAholic!" */;
+			buildPhases = (
+				7FE716D91940043B000C992F /* Sources */,
+				7FE716DA1940043B000C992F /* Frameworks */,
+				7FE716DB1940043B000C992F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "shopAholic!";
+			productName = "shopAholic!";
+			productReference = 7FE716DD1940043B000C992F /* shopAholic!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FE716FD1940043B000C992F /* shopAholic!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FE717121940043B000C992F /* Build configuration list for PBXNativeTarget "shopAholic!Tests" */;
+			buildPhases = (
+				7FE716FA1940043B000C992F /* Sources */,
+				7FE716FB1940043B000C992F /* Frameworks */,
+				7FE716FC1940043B000C992F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FE717041940043B000C992F /* PBXTargetDependency */,
+			);
+			name = "shopAholic!Tests";
+			productName = "shopAholic!Tests";
+			productReference = 7FE716FE1940043B000C992F /* shopAholic!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FE716D51940043A000C992F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Zoltan Gercsak";
+				TargetAttributes = {
+					7FE716FD1940043B000C992F = {
+						TestTargetID = 7FE716DC1940043B000C992F;
+					};
+				};
+			};
+			buildConfigurationList = 7FE716D81940043A000C992F /* Build configuration list for PBXProject "shopAholic!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FE716D41940043A000C992F;
+			productRefGroup = 7FE716DE1940043B000C992F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FE716DC1940043B000C992F /* shopAholic! */,
+				7FE716FD1940043B000C992F /* shopAholic!Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FE716DB1940043B000C992F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE716F91940043B000C992F /* Images.xcassets in Resources */,
+				7FE71732194016D3000C992F /* ShopAholic.json in Resources */,
+				7FE716EB1940043B000C992F /* InfoPlist.strings in Resources */,
+				7FE716F41940043B000C992F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE716FC1940043B000C992F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE7170A1940043B000C992F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FE716D91940043B000C992F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE7172B194006C0000C992F /* item.m in Sources */,
+				7FE7172E194006CC000C992F /* items.m in Sources */,
+				7FE7171A194005D8000C992F /* ItemsViewController.m in Sources */,
+				7FE7172019400611000C992F /* HomeViewViewController.m in Sources */,
+				7FE71717194005BE000C992F /* CartViewController.m in Sources */,
+				7FE7171D194005EA000C992F /* StoreViewController.m in Sources */,
+				7FE717261940064B000C992F /* shoppingCart.m in Sources */,
+				7FE716F71940043B000C992F /* ViewController.m in Sources */,
+				7FE716F11940043B000C992F /* AppDelegate.m in Sources */,
+				7FE7172319400625000C992F /* itemDetailViewController.m in Sources */,
+				7FE716ED1940043B000C992F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE716FA1940043B000C992F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FE7170C1940043B000C992F /* shopAholic_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FE717041940043B000C992F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FE716DC1940043B000C992F /* shopAholic! */;
+			targetProxy = 7FE717031940043B000C992F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FE716E91940043B000C992F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE716EA1940043B000C992F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7FE716F21940043B000C992F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE716F31940043B000C992F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FE717081940043B000C992F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FE717091940043B000C992F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FE7170D1940043B000C992F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7FE7170E1940043B000C992F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FE717101940043B000C992F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shopAholic!/shopAholic!-Prefix.pch";
+				INFOPLIST_FILE = "shopAholic!/shopAholic!-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7FE717111940043B000C992F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shopAholic!/shopAholic!-Prefix.pch";
+				INFOPLIST_FILE = "shopAholic!/shopAholic!-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7FE717131940043B000C992F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/shopAholic!.app/shopAholic!";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shopAholic!/shopAholic!-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "shopAholic!Tests/shopAholic!Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7FE717141940043B000C992F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/shopAholic!.app/shopAholic!";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "shopAholic!/shopAholic!-Prefix.pch";
+				INFOPLIST_FILE = "shopAholic!Tests/shopAholic!Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FE716D81940043A000C992F /* Build configuration list for PBXProject "shopAholic!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE7170D1940043B000C992F /* Debug */,
+				7FE7170E1940043B000C992F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FE7170F1940043B000C992F /* Build configuration list for PBXNativeTarget "shopAholic!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE717101940043B000C992F /* Debug */,
+				7FE717111940043B000C992F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7FE717121940043B000C992F /* Build configuration list for PBXNativeTarget "shopAholic!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FE717131940043B000C992F /* Debug */,
+				7FE717141940043B000C992F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FE716D51940043A000C992F /* Project object */;
+}
