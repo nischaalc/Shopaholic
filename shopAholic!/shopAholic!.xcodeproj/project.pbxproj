@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FB0115619414C750020C299 /* ShopAholic.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FB0115519414C750020C299 /* ShopAholic.json */; };
 		7FE716E11940043B000C992F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716E01940043B000C992F /* Foundation.framework */; };
 		7FE716E31940043B000C992F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716E21940043B000C992F /* CoreGraphics.framework */; };
 		7FE716E51940043B000C992F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE716E41940043B000C992F /* UIKit.framework */; };
@@ -30,7 +31,6 @@
 		7FE7172B194006C0000C992F /* item.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7172A194006C0000C992F /* item.m */; };
 		7FE7172E194006CC000C992F /* items.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE7172D194006CC000C992F /* items.m */; };
 		7FE7173019400E8E000C992F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE7172F19400E8E000C992F /* MapKit.framework */; };
-		7FE71732194016D3000C992F /* ShopAholic.json in Resources */ = {isa = PBXBuildFile; fileRef = 7FE71731194016D3000C992F /* ShopAholic.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FB0115519414C750020C299 /* ShopAholic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ShopAholic.json; path = ../../../ShopAholic.json; sourceTree = "<group>"; };
 		7FE716DD1940043B000C992F /* shopAholic!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shopAholic!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE716E01940043B000C992F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7FE716E21940043B000C992F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,7 +81,6 @@
 		7FE7172C194006CC000C992F /* items.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = items.h; sourceTree = "<group>"; };
 		7FE7172D194006CC000C992F /* items.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = items.m; sourceTree = "<group>"; };
 		7FE7172F19400E8E000C992F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		7FE71731194016D3000C992F /* ShopAholic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = ShopAholic.json; path = ../../ShopAholic.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 				7FE716F21940043B000C992F /* Main.storyboard */,
 				7FE716F51940043B000C992F /* ViewController.h */,
 				7FE716F61940043B000C992F /* ViewController.m */,
-				7FE71731194016D3000C992F /* ShopAholic.json */,
+				7FB0115519414C750020C299 /* ShopAholic.json */,
 				7FE7172719400657000C992F /* customViewController */,
 				7FE717281940067F000C992F /* classes */,
 				7FE716F81940043B000C992F /* Images.xcassets */,
@@ -292,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FE716F91940043B000C992F /* Images.xcassets in Resources */,
-				7FE71732194016D3000C992F /* ShopAholic.json in Resources */,
+				7FB0115619414C750020C299 /* ShopAholic.json in Resources */,
 				7FE716EB1940043B000C992F /* InfoPlist.strings in Resources */,
 				7FE716F41940043B000C992F /* Main.storyboard in Resources */,
 			);
@@ -528,6 +528,7 @@
 				7FE717111940043B000C992F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FE717121940043B000C992F /* Build configuration list for PBXNativeTarget "shopAholic!Tests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +537,7 @@
 				7FE717141940043B000C992F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
