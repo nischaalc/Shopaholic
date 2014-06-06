@@ -1,0 +1,256 @@
+ [
+  {
+  "id":1,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"32 Class",
+  "Quality":"1080p-60Hz",
+  "BrandName":"Samsung",
+  "Price":" 376.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/4833/4833556_500x500_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":2,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"40 Class",
+  "Quality":"1080p-60Hz",
+  "BrandName":"Samsung",
+  "Price":" 429.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/5578/5578649_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":3,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"50 Class",
+  "Quality":"1080p-120Hz",
+  "BrandName":"Samsung",
+  "Price":" 735.00",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/4846/4846838_500x500_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":4,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"50 Class",
+  "Quality":"1080p-240Hz Smart-3D",
+  "BrandName":"Vizio",
+  "Price":" 799.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/8768/8768104_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":5,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"32 Class",
+  "Quality":"1080p-60Hz Smart",
+  "BrandName":"Samsung",
+  "Price":" 369.00",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/7845/7845041_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":6,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"46 Class",
+  "Quality":"1080p-120Hz Smart",
+  "BrandName":"Samsung",
+  "Price":" 849.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/8350/8350048_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":7,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"50 Class",
+  "Quality":"1080p-120Hz Smart",
+  "BrandName":"Vizio",
+  "Price":" 599.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/7171/7171064_500x500_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":8,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"55 Class",
+  "Quality":"1080p-240Hz Smart-3D",
+  "BrandName":"Samsung",
+  "Price":" 1697.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/8224/8224045_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":9,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"39 Class",
+  "Quality":"1080p-60Hz",
+  "BrandName":"Samsung",
+  "Price":" 359.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/8812/8812414_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":10,
+  "Retailer":"Best Buy",
+  "ProductType":"Television",
+  "ProductName":"22 Class",
+  "Quality":"1080p-60Hz",
+  "BrandName":"Samsung",
+  "Price":" 179.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/7979/7979341_500x500_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":11,
+  "Retailer":"Best Buy",
+  "ProductType":"Laptops",
+  "ProductName":"17.3",
+  "Quality":"Intel Core i7-1TB",
+  "BrandName":"ASUS",
+  "Price":" 1299.99",
+  "URL":"http://www.bestbuy.com/site/asus-17-3-laptop-intel-core-i7-8gb-memory-1tb-hard-drive-black/2990031.p?id=1219085427884&skuId=2990031&st=categoryid abcat0502000&cp=1&lp=1#"
+  },
+  {
+  "id":12,
+  "Retailer":"Best Buy",
+  "ProductType":"Laptops",
+  "ProductName":"VivoBook 14",
+  "Quality":"Intel Core i5-500GB",
+  "BrandName":"ASUS",
+  "Price":" 654.98",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/4345/4345044_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":13,
+  "Retailer":"Best Buy",
+  "ProductType":"Laptops",
+  "ProductName":"ATIV Book 9 13.3",
+  "Quality":"Intel Core i7-256GB",
+  "BrandName":"Samsung",
+  "Price":" 1798.00",
+  "URL":"http://images.bestbuy.com/BestBuy_US/images/products/2976/2976026_sc.jpg"
+  },
+  {
+  "id":14,
+  "Retailer":"Best Buy",
+  "ProductType":"Laptops",
+  "ProductName":"ATIV Book 9 Plus 13.3",
+  "Quality":"Intel Core i5-128GB",
+  "BrandName":"ASUS",
+  "Price":" 1661.72",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/mp/products/1309/1309922/1309922215/1309922215_500x500_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":15,
+  "Retailer":"Best Buy",
+  "ProductType":"Cell Phone",
+  "ProductName":"Galaxy S 5",
+  "Quality":"Android 4.4.2 KitKat",
+  "BrandName":"Samsung",
+  "Price":" 149.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/4811/4811019_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":16,
+  "Retailer":"Best Buy",
+  "ProductType":"Cell Phone",
+  "ProductName":"iPhone 5s",
+  "Quality":"IOS7",
+  "BrandName":"Apple",
+  "Price":" 99.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/1722/1722018_sa.jpg;canvasHeight=500;canvasWidth=500"
+  },
+  {
+  "id":17,
+  "Retailer":"Best Buy",
+  "ProductType":"Cell Phone",
+  "ProductName":"G2",
+  "Quality":"Android 4.2.2 Jelly Bean",
+  "BrandName":"LG",
+  "Price":" 99.99",
+  "URL":"http://images.bestbuy.com/BestBuy_US/images/products/1710/1710023_sc.jpg"
+  },
+  {
+  "id":18,
+  "Retailer":"Best Buy",
+  "ProductType":"Cell Phone",
+  "ProductName":"Galaxy S4",
+  "Quality":"4.2.2 JellyBean",
+  "BrandName":"Samsung",
+  "Price":" 49.99",
+  "URL":"http://images.bestbuy.com/BestBuy_US/images/products/2400/2400017_sc.jpg"
+  },
+  {
+  "id":19,
+  "Retailer":"Radio Shack",
+  "ProductType":"Headphones",
+  "ProductName":"INK'd Earbud",
+  "Quality":"Blue",
+  "BrandName":"Skullcandy",
+  "Price":" 18.99",
+  "URL":"http://rsk.imageg.net/graphics/product_images/pRS1-12809715w345.jpg"
+  },
+  {
+  "id":20,
+  "Retailer":"Radio Shack",
+  "ProductType":"Desktop",
+  "ProductName":"20' Pentium",
+  "Quality":"1TB",
+  "BrandName":"DELL",
+  "Price":" 499.99",
+  "URL":"http://rsk.imageg.net/graphics/product_images/pRS1-17648165_rshalt1_dt.jpg"
+  },
+  {
+  "id":21,
+  "Retailer":"Micro Center",
+  "ProductType":"Tablet",
+  "ProductName":"Ideatab Mix",
+  "Quality":"Silver",
+  "BrandName":"Lenovo",
+  "Price":" 299.99",
+  "URL":"http://c773974.r74.cf2.rackcdn.com/425077_910497_01_front_zoom.jpg"
+  },
+  {
+  "id":22,
+  "Retailer":"Micro Center",
+  "ProductType":"Tablet",
+  "ProductName":"YOGA",
+  "Quality":"Silver",
+  "BrandName":"Lenovo",
+  "Price":" 349.99",
+  "URL":"http://c773974.r74.cf2.rackcdn.com/0434046_297713.jpg"
+  },
+  {
+  "id":23,
+  "Retailer":"Walmart",
+  "ProductType":"Remote",
+  "ProductName":"Dualshock 4",
+  "Quality":"Black",
+  "BrandName":"Sony",
+  "Price":"59.99",
+  "URL":"http://www.geek.com/wp-content/uploads/2013/04/PS4_dualshock_4_sideview.jpg"
+  },
+  {
+  "id":24,
+  "Retailer":"Walmart",
+  "ProductType":"Console",
+  "ProductName":"XBOX One",
+  "Quality":"Titanfall Bundle",
+  "BrandName":"Microsoft",
+  "Price":"499.99",
+  "URL":"http://www.winbeta.org/sites/default/files/Xbox-One-Titanfall.jpg"
+  },
+  {
+  "id":25,
+  "Retailer":"Walmart",
+  "ProductType":"Television",
+  "ProductName":"22 Class",
+  "Quality":"1080p-60Hz",
+  "BrandName":"Samsung",
+  "Price":" 179.99",
+  "URL":"http://pisces.bbystatic.com/image2/BestBuy_US/images/products/7979/7979341_500x500_sa.jpg;canvasHeight=500;canvasWidth=500"
+  }
+]
+
+
+
+

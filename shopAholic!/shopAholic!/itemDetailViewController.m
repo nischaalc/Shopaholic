@@ -58,6 +58,10 @@
      }];
     
     _storeMap.zoomEnabled = YES;
+    
+    self.title = [NSString stringWithFormat:@"%@", self.itemObject.type];
+    
+    self.itemDescription.editable = NO;
 
 }
 
@@ -82,7 +86,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     shoppingCart* checkoutCart = [shoppingCart sharedInstance];
-    self.cartIt.enabled = [checkoutCart containsItem:self.itemObject] ? YES : NO;
+    self.cartIt.selected = [checkoutCart containsItem:self.itemObject] ? YES : NO;
     
     //[self zoomToUserLocation:self.storeMap.userLocation];
 }
@@ -100,9 +104,10 @@
     self.itemImage.image = itemImage;
     
     self.nameLabel.text = [NSString stringWithFormat:@"%@", self.itemObject.itemName];
-    self.priceLabel.text = [NSString stringWithFormat:@"%@", self.itemObject.price];
+    self.priceLabel.text = [NSString stringWithFormat:@"$%@", self.itemObject.price];
     
-    self.itemDescription.text = [NSString stringWithFormat:@"%@", self.itemObject.description];
+    self.itemDescription.text = [NSString stringWithFormat:@"\u2022 %@\n", self.itemObject.quality];
+    
 }
 
 /*
@@ -120,13 +125,15 @@
 {
     shoppingCart* checkoutCart = [shoppingCart sharedInstance];
     
-    if (!self.cartIt.enabled) {
+    if (!self.cartIt.selected) {
         [checkoutCart addItem:self.itemObject];
-        self.cartIt.enabled = YES;
+        self.cartIt.selected = YES;
+        [sender setTitle:@"Remove from cart" forState:UIControlStateNormal];
     }
     else {
         [checkoutCart removeItem:self.itemObject];
-        self.cartIt.enabled = NO;
+        self.cartIt.selected = NO;
+        [sender setTitle:@"Add to cart" forState:UIControlStateNormal];
     }
 }
 @end

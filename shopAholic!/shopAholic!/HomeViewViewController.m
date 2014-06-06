@@ -33,6 +33,7 @@
 
     self.itemObject = [items sharedInstance].allItems[0];
     [self populateData];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -59,19 +60,18 @@
 }
 */
 
-- (void)populateData {
+- (void)populateData
+{
     
     self.featureName.text = [NSString stringWithFormat:@"Item Name: %@", self.itemObject.itemName];
     
-    self.featurePrice.text = [NSString stringWithFormat:@"Price: %@", self.itemObject.price];
+    self.featurePrice.text = [NSString stringWithFormat:@"Price: $ %@", self.itemObject.price];
     
     NSURL *url = [NSURL URLWithString: self.itemObject.photoURL];
-    
+
     NSData *data = [NSData dataWithContentsOfURL:url];
     
-    UIImage *itemImage = [UIImage imageWithData:data];
-    
-    _featureImage.image = itemImage;
+    _featureImage.image = [UIImage imageWithData:data];
 }
 
 - (IBAction)toRetail:(id)sender
@@ -86,24 +86,25 @@
 - (IBAction)addToCartButton:(id)sender
 {
     shoppingCart* checkoutCart = [shoppingCart sharedInstance];
-    
     if (!self.addToCart.selected) {
         [checkoutCart addItem:self.itemObject];
         self.addToCart.selected = YES;
+        [sender setTitle:@"Remove from cart" forState:UIControlStateNormal];
     }
     else {
         [checkoutCart removeItem:self.itemObject];
         self.addToCart.selected = NO;
+        [sender setTitle:@"Add to cart" forState:UIControlStateNormal];
     }
 }
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"homeToItem"])
-    {
-        ItemsViewController *destView = segue.destinationViewController;
-    }
-}
+//-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([segue.identifier isEqualToString:@"homeToItem"])
+//    {
+//        ItemsViewController *destView = segue.destinationViewController;
+//    }
+//}
 
 
 @end

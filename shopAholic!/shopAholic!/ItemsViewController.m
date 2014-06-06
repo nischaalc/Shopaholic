@@ -46,25 +46,30 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    //return [[items sharedInstance].allItems count];
-    return 12;
+    return [[items sharedInstance].allItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 
-    
     item* itemObject = [items sharedInstance].allItems[indexPath.row];
+    
     static NSString *simpleTableIdentifier = @"itemCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
     if (cell == nil)
     {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:simpleTableIdentifier];
     }
+    
+    NSURL *url = [NSURL URLWithString: itemObject.photoURL];
+    
+    NSData *data = [NSData dataWithContentsOfURL:url];
     
     cell.detailTextLabel.text =  itemObject.retailer;
     cell.textLabel.text = itemObject.itemName;
+    cell.imageView.image = [UIImage imageWithData:data];
+    
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
@@ -76,13 +81,15 @@
     self.selectedIndex = indexPath.row;
 
     [self.itemTable deselectRowAtIndexPath:indexPath animated:YES];
-    
-    [self performSegueWithIdentifier:@"toDetail" sender:nil];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"toDetail"])
+    {
     itemDetailViewController* viewController = (itemDetailViewController*) segue.destinationViewController;
     viewController.itemObject = [items sharedInstance].allItems[self.selectedIndex];
+    }
 }
 
 

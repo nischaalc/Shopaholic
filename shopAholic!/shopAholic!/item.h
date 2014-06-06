@@ -16,5 +16,6 @@
 @property (strong, nonatomic) NSString* quality;
 @property (strong, nonatomic) NSString* type;
 @property (strong, nonatomic) NSString* price;
+@property (strong, nonatomic) NSNumber* ID;
 
 @end

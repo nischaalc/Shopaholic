@@ -44,15 +44,16 @@
 
 - (BOOL)containsItem:(item*)itemObject
 {
-    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"URL=%@", itemObject.photoURL];
+    NSPredicate* predicate = [NSPredicate predicateWithFormat:@"ID=%@", itemObject.ID];
     NSArray* duplicateItems = [self.itemArray filteredArrayUsingPredicate:predicate];
     return (duplicateItems.count > 0) ? YES : NO;
 }
 
-- (void)addItem:(item*)itemObject {
-//    if (![self containsItem:itemObject]) {
+- (void)addItem:(item*)itemObject
+{
+   if (![self containsItem:itemObject]) {
         [self.itemArray addObject:itemObject];
-   // }
+    }
 }
 
 - (void)removeItem:(item *)itemObject {
@@ -65,9 +66,10 @@
 
 - (NSNumber*)total {
     
-    double total = 0.0;
+    int total = 0;
     for (item* itemObject in self.itemsInCart) {
-        total += [itemObject.price doubleValue];
+        NSLog(@"%@", itemObject.price);
+        total += [itemObject.price intValue];
     }
     return @(total);
 }

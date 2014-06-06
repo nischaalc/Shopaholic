@@ -33,21 +33,20 @@
 
 - (NSArray *)loadItemsFromJSON {
     
-    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"ShopAholic" ofType:@"json"];
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"dogs" ofType:@"json"];
     
     NSError* error;
     NSData* jsonData =  [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:&error];
     
     NSArray* jsonArray = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
-
-    
-    NSLog(@"%@", jsonArray);
     
     NSMutableArray* itemArray = [[NSMutableArray alloc] initWithCapacity:jsonArray.count];
     
     for (NSDictionary* itemDictionary in jsonArray)
     {
         item* itemObject = [[item alloc] init];
+        
+        itemObject.ID = itemDictionary[@"id"];
         itemObject.retailer = itemDictionary[@"Retailer"];
         itemObject.itemName = itemDictionary[@"ProductName"];
         itemObject.photoURL = itemDictionary[@"URL"];

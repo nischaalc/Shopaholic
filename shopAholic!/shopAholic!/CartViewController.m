@@ -7,8 +7,14 @@
 //
 
 #import "CartViewController.h"
+#import "CompareViewController.h"
+#import "itemDetailViewController.h"
+#import "item.h"
+#import "items.h"
 
 @interface CartViewController ()
+
+@property (assign, nonatomic) NSInteger selectedIndex;
 
 @end
 
@@ -84,7 +90,35 @@
     return nil;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedIndex = indexPath.row;
+    
+    UIAlertView *removedAlert = [[UIAlertView alloc]initWithTitle:@"Successful" message:@"Item removed from cart!" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+    
+    [self.cartTable deselectRowAtIndexPath:indexPath animated:YES];
+    
+    item* itemObject = self.checkoutCart.itemsInCart[indexPath.row];
+    
+    [_checkoutCart removeItem:itemObject];
+    
+    [self.cartTable reloadData];
+    
+    [removedAlert show];
+}
+
 - (IBAction)toCompare:(id)sender
 {
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"toCompare"])
+    {
+        CompareViewController *destView = segue.destinationViewController;
+        
+        destView.checkoutCart = self.checkoutCart;
+    }
+}
+
 @end

@@ -20,7 +20,7 @@
 
 @property (strong, nonatomic) item* itemObject;
 - (IBAction)cartButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *cartIt;
+@property (weak, nonatomic) IBOutlet UIButton *cartIt;
 
 
 @end
