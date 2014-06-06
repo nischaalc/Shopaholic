@@ -62,6 +62,8 @@
     self.title = [NSString stringWithFormat:@"%@", self.itemObject.type];
     
     self.itemDescription.editable = NO;
+    
+    [self reloadInputViews];
 
 }
 
@@ -75,6 +77,16 @@
     region.span = MKCoordinateSpanMake(1.0, 1.0); //Zoom distance
     region = [self.storeMap regionThatFits:region];
     [self.storeMap setRegion:region animated:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self zoomToUserLocation:self.storeMap.userLocation];
+}
+- (void)mapView:(MKMapView *)theMapView didUpdateToUserLocation:(MKUserLocation *)location
+{
+    [self zoomToUserLocation:location];
 }
 
 - (void)didReceiveMemoryWarning

@@ -12,11 +12,13 @@
 
 @interface CompareViewController ()
 
-@property (strong, nonatomic) NSMutableArray* retailerList;
-
 @end
 
 @implementation CompareViewController
+{
+    NSMutableArray *retailerList;
+    NSMutableArray *priceList;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,16 +37,17 @@
     _finalMap.showsUserLocation = YES;
     //Create MKLocalSearchRequest
     
-    [self fillRetailerList];
+    retailerList = [[NSMutableArray alloc]initWithArray:[self fillRetailerList]];
+
     MKLocalSearchRequest *searchObject = [[MKLocalSearchRequest alloc]init];
-    searchObject.naturalLanguageQuery = self.itemObject.retailer;
-    searchObject.region = _finalMap.region;
     
     // Create MKLocal Search
-
-    for (int i = 0; i < self.retailerList.count; i++)
+    
+    for (int i = 0; i < retailerList.count; i++)
     {
-        MKLocalSearch *search = [[MKLocalSearch alloc]initWithRequest:[self.retailerList objectAtIndex:i]];
+        searchObject.naturalLanguageQuery = [NSString stringWithFormat:@"%@", [retailerList objectAtIndex:i]];
+        searchObject.region = _finalMap.region;
+        MKLocalSearch *search = [[MKLocalSearch alloc]initWithRequest:searchObject];
         
         [search startWithCompletionHandler:^(MKLocalSearchResponse *response, NSError *error)
          {
@@ -63,8 +66,6 @@
     
     _finalMap.zoomEnabled = YES;
     
-    NSLog(@"%@", self.retailerList);
-    
 }
 
 - (void)zoomToUserLocation:(MKUserLocation *)userLocation
@@ -79,51 +80,63 @@
     [self.finalMap setRegion:region animated:YES];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self zoomToUserLocation:self.finalMap.userLocation];
+}
+    - (void)mapView:(MKMapView *)theMapView didUpdateToUserLocation:(MKUserLocation *)location
+{
+    [self zoomToUserLocation:location];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
--(void)fillRetailerList
+-(NSMutableArray*)fillRetailerList
 {
-    int counter = 0;
-    
-    item* itemObject;
+    NSMutableArray* inputArray = [[NSMutableArray alloc]init];
+    item* itemObj;
     NSString *retailerName;
     
-    for (int i = 0; i < self.checkoutCart.itemsInCart.count;i++)
+    for (int i = 0; i < self.finalCart.itemsInCart.count;i++)
     {
-        itemObject = self.checkoutCart.itemsInCart[i];
-        retailerName = itemObject.retailer;
+        itemObj = [self.finalCart.itemsInCart objectAtIndex:i];
         
-        [self.retailerList addObject:retailerName];
+        if (![inputArray containsObject:itemObj.retailer] == YES)
+        {
+            retailerName = [NSString stringWithFormat: @"%@", itemObj.retailer];
+            [inputArray addObject:retailerName];
+        }
         
+        [priceList addObject:itemObj];
     }
-    
-    
+    return inputArray;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.checkoutCart.itemsInCart.count;
+    return retailerList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-        item* itemObject = self.checkoutCart.itemsInCart[indexPath.row];
-        
         static NSString *simpleTableIdentifier = @"finalCell";
         
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-        cell.textLabel.text = [self.retailerList objectAtIndex:indexPath.row];
-        cell.detailTextLabel.text = itemObject.price;
-
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:simpleTableIdentifier];
+    
+        cell.textLabel.text = [retailerList objectAtIndex:indexPath.row];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"$ %@", [self.finalCart total]];
+    
         return cell;
 
 }
+
 
 
 /*

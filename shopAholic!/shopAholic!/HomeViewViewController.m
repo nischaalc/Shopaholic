@@ -72,6 +72,7 @@
     NSData *data = [NSData dataWithContentsOfURL:url];
     
     _featureImage.image = [UIImage imageWithData:data];
+    _featureImage.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 - (IBAction)toRetail:(id)sender

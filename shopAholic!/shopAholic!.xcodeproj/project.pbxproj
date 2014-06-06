@@ -205,11 +205,11 @@
 		7FE717281940067F000C992F /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				7FE717241940064B000C992F /* shoppingCart.h */,
 				7FE71729194006C0000C992F /* item.h */,
 				7FE7172A194006C0000C992F /* item.m */,
 				7FE7172C194006CC000C992F /* items.h */,
 				7FE7172D194006CC000C992F /* items.m */,
+				7FE717241940064B000C992F /* shoppingCart.h */,
 				7FE717251940064B000C992F /* shoppingCart.m */,
 			);
 			name = classes;

@@ -67,8 +67,8 @@
 - (NSNumber*)total {
     
     int total = 0;
-    for (item* itemObject in self.itemsInCart) {
-        NSLog(@"%@", itemObject.price);
+    for (item* itemObject in self.itemsInCart)
+    {
         total += [itemObject.price intValue];
     }
     return @(total);

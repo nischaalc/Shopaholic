@@ -17,6 +17,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *finalTable;
 
 @property (strong, nonatomic) item* itemObject;
-@property (strong, nonatomic) shoppingCart* checkoutCart;
+@property (strong, nonatomic) shoppingCart* finalCart;
 
 @end

@@ -34,6 +34,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.checkoutCart = [shoppingCart sharedInstance];
+    
+    UIAlertView *info = [[UIAlertView alloc]initWithTitle:nil message:@"To remove an item from your cart, just tap it." delegate:self cancelButtonTitle:nil otherButtonTitles:@"Got it", nil];
+    
+    [info show];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -117,7 +121,7 @@
     {
         CompareViewController *destView = segue.destinationViewController;
         
-        destView.checkoutCart = self.checkoutCart;
+        destView.finalCart = self.checkoutCart;
     }
 }
 
