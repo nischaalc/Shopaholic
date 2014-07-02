@@ -1,7 +1,7 @@
 Shopaholic - Shop Better
 ==========
 
-![ShopaholicLogo](shopAholic!/shopAholic!/Images.xcassets/AppIcon.appiconset/icon.png)
+![ShopaholicLogo](shopAholic!/shopAholic!/Images.xcassets/AppIcon.appiconset/Icon.png)
 
 **Still in beta, Shopaholic for iOS is an app that aims to make shopping more efficient.** 
 
