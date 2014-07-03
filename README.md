@@ -1,4 +1,4 @@
-Shopaholic - Shop Better **BETA**
+Shopaholic - Shop Better *(BETA)*
 ==========
 
 ![ShopaholicLogo](shopAholic!/shopAholic!/Images.xcassets/AppIcon.appiconset/Icon.png)
