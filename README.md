@@ -6,9 +6,9 @@ Shopaholic - Shop Better *(BETA)*
 **Shopaholic for iOS is an app that wants to change the way you shop.** 
 
 No one has time to travel from store to store looking for things that they need, wasting hours and maybe even days in the 
-process! This is where Shopaholic comes in - all you need to do is ask. Shopaholic talks to retailers and let's you know
+process! This is where Shopaholic comes in - all you need to do is ask. Shopaholic *talks* to retailers and lets you know
 which stores have the items you are looking for. Ranging from laptops to clothes, you can be sure that Shopaholic will help 
-you out!
+you out (or so it's planned)!
 
 *As of this version, backend functionality has not been fully implemented due to recurring errors.*
 
