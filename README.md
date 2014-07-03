@@ -11,6 +11,15 @@ which stores have the items you are looking for. Ranging from laptops to clothes
 you out!
 
 *As of this version, backend functionality has not been fully implemented due to recurring errors.*
+*This app was born out of an idea for a Freshman Design Project at Drexel University.*
+
+The Team
+--------
+
+* Nischaal Cooray
+* Zoltan Gercsak
+* Roger White
+* Sean Swartz
 
 Notes
 -----
