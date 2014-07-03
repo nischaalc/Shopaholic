@@ -3,7 +3,10 @@ Shopaholic - Shop Better
 
 ![ShopaholicLogo](shopAholic!/shopAholic!/Images.xcassets/AppIcon.appiconset/Icon.png)
 
-**Still in beta, Shopaholic for iOS is an app that aims to make shopping more efficient.** 
+BETA
+----
+
+**Shopaholic for iOS is an app that wants to change the way you shop.** 
 
 No one has time to travel from store to store looking for things that they need, wasting hours and maybe even days in the 
 process! This is where Shopaholic comes in - all you need to do is ask. Shopaholic talks to retailers and let's you know
