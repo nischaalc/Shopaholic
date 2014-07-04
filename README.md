@@ -26,6 +26,7 @@ Notes
 -----
 
 * Ports to Android and Windows Phone are planned.
+* Extensions for major web browsers are planned.
 * This repo may be deserted - Development for iOS may switch to Swift.
 * The UX is constantly being updated and refined - please feel free to message me with any suggestions!
 * All code is open source - feel free to fork this repo, but do not copy the core functionality of the app! Be nice!
